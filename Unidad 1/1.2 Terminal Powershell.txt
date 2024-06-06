@@ -1,0 +1,37 @@
+Set-Location -Path ".\Unidad 1\"
+Get-Location
+Get-ChildItem
+Get-ChildItem -Force
+Get-ChildItem | Format-List
+Set-Location -Path ..
+New-Item -ItemType Directory -Name "practica2"
+Remove-Item -Recurse -Force -Path "practica2"
+New-Item -ItemType Directory -Name "practica2"
+Set-Location -Path "practica2"
+New-Item -ItemType File -Name "ejemplo.txt"
+"Hola mundo!" | Out-File -FilePath "ejemplo.txt"
+Get-Content -Path "ejemplo.txt"
+Select-String -Pattern "Hola" -Path "ejemplo.txt"
+notepad "ejemplo.txt"
+notepad "hello.ps1"
+# Colocar dentro
+Get-Location
+Get-ChildItem
+Get-ChildItem -Force
+Get-ChildItem | Format-List
+# Hacer el script ejecutable
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+.\hello.ps1
+bash hello.sh
+Invoke-WebRequest -Uri "https://es.wikipedia.org/wiki/Wikipedia:Portada" -OutFile "Portada.html"
+Test-Connection -ComputerName "google.com" -Count 4
+Get-Process
+Get-Process | Format-List *
+Get-ChildItem -Recurse | Measure-Object -Property Length -Sum
+Get-PSDrive -PSProvider FileSystem
+Get-ComputerInfo
+Get-ComputerInfo | Format-List *
+$env:USERNAME
+New-Item -ItemType File -Name "david.py"
+Move-Item -Path "david.py" -Destination "..\"
+Move-Item -Path "..\david.py" -Destination ".\practica\"

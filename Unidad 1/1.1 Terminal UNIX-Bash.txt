@@ -1,0 +1,42 @@
+cd '.\Unidad 1\'
+pwd
+ls
+ls -a
+ls -l 
+cd ..
+mkdir practica
+rmdir practica
+cd practica
+touch ejemplo.txt
+echo "Hola mundo!" > ejemplo.txt
+cat ejemplo.txt
+grep "Hola" ejemplo.txt
+nano ejemplo.txt
+CTRL+X
+nano hello.sh
+CTRL+X
+chmod +x script.sh
+./hello.sh
+bash hello.sh
+curl https://es.wikipedia.org/wiki/Wikipedia:Portada
+ping google.com
+ps 
+ps aux
+du 
+df
+uname
+uname -a
+whoami
+head hello.sh
+tail hello.sh
+tail -n 2 hello.sh
+touch david.py
+mv david.py ..
+mv david.py practica/
+cd practica/
+cp david.py ..
+cd ..
+mv david.py practica/
+cd practica/
+rm ejemplo.txt
+
