@@ -43,8 +43,10 @@ print(f"Cadena con comillas simples: {cadena_simple}")
 print(f"Cadena con comillas dobles: {cadena_doble}")
 
 # Puedes usar comillas triples para strings multilínea.
-cadena_multilinea = """Esta es una cadena
-multilínea en Python."""
+cadena_multilinea = """
+hdhdhdd
+dnndnd
+"""
 print(f"Cadena multilínea: {cadena_multilinea}")
 
 # Concatenación de strings
@@ -56,7 +58,6 @@ print(f"Concatenación: {saludo}")
 edad = 30
 mensaje = f"{nombre} tiene {edad} años."
 print(f"Interpolación (f-string): {mensaje}")
-
 # Métodos comunes de strings
 longitud = len(mensaje)
 mayusculas = mensaje.upper()
@@ -67,6 +68,7 @@ print(f"Longitud del mensaje: {longitud}")
 print(f"Mensaje en mayúsculas: {mayusculas}")
 print(f"Mensaje en minúsculas: {minusculas}")
 print(f"Reemplazo de 'Juan' por 'Pedro': {reemplazo}")
+
 
 # Indexación y segmentación (slicing) de strings
 primer_caracter = mensaje[0]
@@ -97,4 +99,4 @@ print(f"Número grande formateado: {numero_grande:,}")
 
 # 3. Usa f-strings para formatear números con decimales.
 pi = 3.14159
-print(f"Pi con dos decimales: {pi:.2f}")
+print(f"Pi con dos decimales: {pi:.3f}")

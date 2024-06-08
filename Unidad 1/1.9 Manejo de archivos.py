@@ -29,16 +29,17 @@ with open("archivo.txt", "r") as archivo:
     lineas = archivo.readlines()
     print(f"Líneas como lista: {lineas}")
 
+
 # Parte 3: Escritura en Archivos
 
 # Escribir en un archivo (modo "w" sobrescribe el contenido existente)
-with open("archivo_escritura.txt", "w") as archivo:
+with open("archivo_escritura.txt", "w", encoding='utf-8') as archivo:
     archivo.write("Primera línea\n")
     archivo.write("Segunda línea\n")
 print("Contenido escrito en archivo_escritura.txt")
 
 # Añadir contenido a un archivo existente (modo "a" de append)
-with open("archivo_escritura.txt", "a") as archivo:
+with open("archivo_escritura.txt", "a", encoding='utf-8') as archivo:
     archivo.write("Tercera línea\n")
 print("Contenido añadido a archivo_escritura.txt")
 
@@ -75,7 +76,7 @@ with open("archivo_consejo.txt", "w") as archivo:
     archivo.write("Usar with para manejar archivos es una buena práctica")
 
 # 2. Leer archivos grandes en bloques para evitar problemas de memoria.
-with open("archivo_grande.txt", "r") as archivo:
+with open("archivo_grande.txt", "r", encoding='utf-8') as archivo:
     while True:
         bloque = archivo.read(1024)  # Leer en bloques de 1KB
         if not bloque:
@@ -87,5 +88,6 @@ import csv
 
 with open("archivo.csv", newline='') as archivo_csv:
     lector = csv.reader(archivo_csv)
+    print(lector)
     for fila in lector:
         print(f"Fila CSV: {fila}")

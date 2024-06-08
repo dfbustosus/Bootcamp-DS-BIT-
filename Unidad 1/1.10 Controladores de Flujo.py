@@ -4,6 +4,8 @@
 x = 10
 if x > 5:
     print("x es mayor que 5")
+else:
+    print("XXXXX")
 
 # Puedes tener múltiples condiciones usando elif.
 y = 15
@@ -16,7 +18,7 @@ else:
 
 # Ejemplo con operadores lógicos
 z = 25
-if z > 10 and z < 30:
+if (z > 10) and (z < 30):
     print("z está entre 10 y 30")
 
 # Parte 2: Bucles (for y while)
@@ -34,6 +36,8 @@ n = 0
 while n < 5:
     print(f"Iteración {n}")
     n += 1
+else:
+    print('Saliendo')
 
 # Parte 3: Control de bucles (break, continue, pass)
 
@@ -63,6 +67,10 @@ for i in range(5):
 # Las comprehensions son una forma concisa de crear listas, conjuntos y diccionarios.
 
 # List comprehension
+lista_v=[]
+for i in range(10):
+    lista_v.append(i**2)
+
 cuadrados = [x**2 for x in range(10)]
 print(f"List comprehension de cuadrados: {cuadrados}")
 
@@ -95,6 +103,7 @@ def clasificar_edad(edad):
 print(f"Clasificación de edad (15): {clasificar_edad(15)}")
 print(f"Clasificación de edad (30): {clasificar_edad(30)}")
 print(f"Clasificación de edad (70): {clasificar_edad(70)}")
+
 
 # Parte 6: Control de excepciones
 

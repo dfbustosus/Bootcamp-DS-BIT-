@@ -80,6 +80,7 @@ print(f"{verdadero} OR {falso} : {or_logico}")
 not_logico = not verdadero
 print(f"NOT {verdadero} : {not_logico}")
 
+
 # Parte 4: Operadores de Asignación
 
 # Los operadores de asignación se usan para asignar valores a las variables.

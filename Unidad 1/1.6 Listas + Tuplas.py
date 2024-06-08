@@ -42,8 +42,9 @@ sublista = mi_lista[1:4]
 print(f"Sublista [1:4]: {sublista}")
 
 # List comprehension
-cuadrados = [x**2 for x in mi_lista]
+cuadrados = [x**2 for x in mi_lista if x>2]
 print(f"Cuadrados de los elementos en la lista: {cuadrados}")
+
 
 # Parte 2: Tuplas en Python
 
@@ -61,6 +62,7 @@ primer_elemento_tupla = mi_tupla[0]
 ultimo_elemento_tupla = mi_tupla[-1]
 print(f"Primer elemento de la tupla: {primer_elemento_tupla}")
 print(f"Último elemento de la tupla: {ultimo_elemento_tupla}")
+
 
 # Las tuplas son inmutables, por lo que no se pueden modificar sus elementos directamente.
 # Sin embargo, puedes concatenar tuplas para crear una nueva.

@@ -33,13 +33,15 @@ print(f"Diccionario después de eliminar 'ciudad': {mi_diccionario}")
 
 # Usar get() para evitar errores si la clave no existe
 profesion = mi_diccionario.get("profesión", "No especificado")
+a= mi_diccionario.get("AAA","XXXX")
 print(f"Profesión: {profesion}")
+print(a)
 
 # Parte 2: Sets en Python
 
 # Los sets son colecciones desordenadas de elementos únicos.
 # Puedes crear un set utilizando llaves {} o la función set().
-mi_set = {1, 2, 3, 4, 5}
+mi_set = {1, 2, 3, 4, 5, 5, 5 }
 print(f"Set inicial: {mi_set}")
 
 # Los sets eliminan automáticamente los duplicados
@@ -55,22 +57,20 @@ print(f"Set después de eliminar 3: {mi_set}")
 
 # Operaciones de conjuntos
 otro_set = {4, 5, 6, 7, 8}
-
+mi_set = {1, 2, 3, 4, 5, 5, 5 }
 # Unión
 union = mi_set | otro_set
 print(f"Unión de sets: {union}")
-
 # Intersección
 interseccion = mi_set & otro_set
 print(f"Intersección de sets: {interseccion}")
-
 # Diferencia
 diferencia = mi_set - otro_set
 print(f"Diferencia de sets: {diferencia}")
-
 # Diferencia simétrica
 diferencia_simetrica = mi_set ^ otro_set
 print(f"Diferencia simétrica de sets: {diferencia_simetrica}")
+
 
 # Consejos avanzados:
 # 1. Usar sets para eliminar duplicados de una lista.
