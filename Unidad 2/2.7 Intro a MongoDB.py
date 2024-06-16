@@ -9,9 +9,9 @@ coleccion = db["mi_coleccion"]
 # 1. Inserción de documentos
 def insertar_documentos():
     documentos = [
-        {"nombre": "Juan", "edad": 28, "ciudad": "Madrid"},
-        {"nombre": "Ana", "edad": 22, "ciudad": "Barcelona"},
-        {"nombre": "Luis", "edad": 35, "ciudad": "Valencia"}
+        {"nombre": "Juan", "edad": 28, "ciudad": "Madrid", "mascotas":{"mascota_1":"Garfield"}},
+        {"nombre": "Ana", "edad": 22, "ciudad": "Barcelona","mascotas":{"mascota_1":"Can", "mascota_2":"Tainitin"}},
+        {"nombre": "Luis", "edad": 35, "ciudad": "Valencia","mascotas":{}}
     ]
     resultado = coleccion.insert_many(documentos)
     print(f"Documentos insertados con los IDs: {resultado.inserted_ids}")
@@ -48,7 +48,7 @@ if __name__ == "__main__":
 
     print("\nActualizando documento...")
     # Reemplaza el ID con un ID válido de tu colección
-    id_documento = "666df501dd2c9b64886a91ed"  # Usa un ObjectId válido
+    id_documento = "666f12a9fdeb793e6070fc0a"  # Usa un ObjectId válido
     nuevos_valores = {"edad": 30}
     actualizar_documento(id_documento, nuevos_valores)
 
