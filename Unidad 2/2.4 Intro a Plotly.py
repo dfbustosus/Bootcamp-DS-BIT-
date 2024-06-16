@@ -3,6 +3,7 @@
 # Lo primero que necesitamos hacer es instalar Plotly.
 # Puedes instalar Plotly utilizando pip:
 #!python -m pip install -q plotly
+import plotly.express as px
 import plotly.graph_objects as go
 import numpy as np
 import pandas as pd
@@ -17,7 +18,6 @@ y = np.sin(x)
 # Creamos la figura y añadimos un trazado de línea.
 fig = go.Figure()
 fig.add_trace(go.Scatter(x=x, y=y, mode='lines', name='sin(x)'))
-
 # Personalizamos el diseño del gráfico.
 fig.update_layout(title='Gráfico de Líneas Interactivo',
                   xaxis_title='Eje X',
@@ -25,6 +25,7 @@ fig.update_layout(title='Gráfico de Líneas Interactivo',
 
 # Mostramos el gráfico interactivo.
 fig.show()
+
 
 # Parte 3: Gráfico de Barras Interactivo
 

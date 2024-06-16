@@ -2,12 +2,9 @@
 
 # Primero, asegúrate de tener Matplotlib instalado. Puedes instalarlo usando pip:
 #!python -m pip install -q matplotlib
-
 # Importamos la librería
 import matplotlib.pyplot as plt
-
 # Parte 2: Creación de gráficos básicos
-
 # Empezamos con un gráfico de líneas simple.
 import numpy as np
 
@@ -22,6 +19,7 @@ plt.xlabel('Eje X')
 plt.ylabel('Eje Y')
 plt.show()
 
+
 # Parte 3: Personalización de gráficos
 
 # Podemos personalizar nuestros gráficos con diferentes estilos y opciones.
@@ -32,6 +30,7 @@ plt.ylabel('Eje Y')
 plt.legend()
 plt.grid(True)
 plt.show()
+
 
 # Parte 4: Gráficos de dispersión
 
@@ -50,11 +49,12 @@ plt.show()
 # Los histogramas son útiles para mostrar distribuciones de datos.
 data = np.random.randn(1000)
 
-plt.hist(data, bins=30, alpha=0.5, color='g')
+plt.hist(data, bins=30, alpha=0.5, color='r')
 plt.title('Histograma')
 plt.xlabel('Valor')
 plt.ylabel('Frecuencia')
 plt.show()
+
 
 # Parte 6: Gráficos de barras
 
@@ -87,13 +87,14 @@ x = np.linspace(0, 10, 100)
 y1 = np.sin(x)
 y2 = np.cos(x)
 
-fig, (ax1, ax2) = plt.subplots(2, 1)
+fig, (ax1, ax2) = plt.subplots(nrows=2, ncols=1)
 ax1.plot(x, y1, 'r')
 ax1.set_title('Seno')
 ax2.plot(x, y2, 'b')
 ax2.set_title('Coseno')
 plt.tight_layout()
 plt.show()
+
 
 # Parte 9: Guardar gráficos
 
@@ -105,6 +106,7 @@ plt.ylabel('Eje Y')
 plt.legend()
 plt.savefig('grafico_seno.png')
 plt.show()
+
 
 # Parte 10: Consejos avanzados
 

@@ -29,6 +29,7 @@ plt.xlabel("Total de la Cuenta")
 plt.ylabel("Propina")
 plt.show()
 
+
 # Parte 4: Personalización de Gráficos
 
 # Seaborn nos permite personalizar nuestros gráficos de manera sencilla.
