@@ -28,6 +28,7 @@ plt.plot(X, model.predict(X), color='red')
 plt.title("Regresion simple")
 plt.show()
 
+
 # 3. Reg Multiple
 print("\n3. Reg Multiple")
 X_multi = np.random.rand(100, 2)
@@ -38,6 +39,7 @@ model_multi.fit(X_multi, y_multi)
 
 print(f"Intercept: {model_multi.intercept_:.2f}")
 print(f"Coefficients: {model_multi.coef_}")
+
 
 # 4. Reg Polinomial 
 print("\n4. Regresion polinomial")

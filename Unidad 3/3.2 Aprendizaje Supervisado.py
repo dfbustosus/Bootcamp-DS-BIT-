@@ -45,6 +45,7 @@ plt.title("Regresión Lineal")
 plt.savefig('regresion_lineal.png')
 plt.close()
 
+
 # 2. Regresión Polinómica
 print("\n2. Regresión Polinómica")
 from sklearn.preprocessing import PolynomialFeatures
@@ -59,6 +60,7 @@ y_pred_poly = model_poly.predict(X_test_poly)
 
 print("Resultados de Regresión Polinómica:")
 evaluate_regression(y_test, y_pred_poly)
+
 
 # 3. Regresión Ridge (L2)
 print("\n3. Regresión Ridge")
@@ -77,6 +79,7 @@ y_pred_lasso = model_lasso.predict(X_test)
 
 print("Resultados de Regresión Lasso:")
 evaluate_regression(y_test, y_pred_lasso)
+
 
 # 5. Árbol de Decisión (Regresión)
 print("\n5. Árbol de Decisión (Regresión)")
